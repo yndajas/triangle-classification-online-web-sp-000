@@ -11,7 +11,7 @@ class Triangle
     type = ""
     
     if @a == 0 || @b == 0 || @c == 0 || @a + @b < @c || @a + @c < @b || @b + @c < @a
-      # raise type error
+      begin
     elsif @a == @b && @b == @c
       type = :equilateral
     elsif 
@@ -20,6 +20,8 @@ class Triangle
   end
   
   class TriangleError < StandardError
-    "this is not a valid triangle"
+    def message
+      "this is not a valid triangle"
+    end
   end
 end
