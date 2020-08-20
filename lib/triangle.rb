@@ -10,7 +10,9 @@ class Triangle
   def kind
     type = ""
     
-    if 
+    if @a == 0 || @b == 0 || @c == 0
+      # raise type error
+    elsif @a + @b < @c
       @a == @b && @b == @c
       :equilateral
     elsif
