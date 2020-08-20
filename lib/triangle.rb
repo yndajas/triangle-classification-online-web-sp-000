@@ -12,7 +12,7 @@ class Triangle
     
     if @a == 0 || @b == 0 || @c == 0
       # raise type error
-    elsif @a + @b < @c
+    elsif @a + @b < @c ||
       @a == @b && @b == @c
       :equilateral
     elsif
