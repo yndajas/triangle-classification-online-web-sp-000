@@ -18,9 +18,12 @@ class Triangle
       end
     elsif @a == @b && @b == @c
       type = :equilateral
-    elsif 
-      
+    elsif @a != @b && @b != @c && @a != @c
+      type = :scalene
     else
+      type = :isosceles
+    end
+    type
   end
   
   class TriangleError < StandardError
