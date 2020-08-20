@@ -1,3 +1,4 @@
 class Triangle
-  # write code here
+  def initialize()
+    # write code here
 end
