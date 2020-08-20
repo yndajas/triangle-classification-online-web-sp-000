@@ -18,4 +18,8 @@ class Triangle
       
     else
   end
+  
+  class TriangleError < StandardError
+    "this is not a valid triangle"
+  end
 end
